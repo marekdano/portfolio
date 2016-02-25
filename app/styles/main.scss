@@ -2,6 +2,7 @@
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/font-awesome/scss/font-awesome.scss";
 // endbower
 
 html, body {
@@ -13,21 +14,57 @@ body {
 }
 
 .wrapper {
-  //min-width: 600px;
+  max-width: 800px;
   height: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  background-color: blue;
   display: -ms-flexbox;
   display: -webkit-flex;
   display:         flex;
   -webkit-justify-content: center;
+      -ms-justify-content: center;
           justify-content: center;
+ 
   -webkit-align-items: center;
+      -ms-align-items: center;
           align-items: center;
 }
 
 .about {
+  margin: 100px;
+  padding: 100px;
+  height: 500px;
   background: tomato;
   text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display:         flex;
+
+  flex-direction: column;
+  justify-content: space-around;
+
+  h1 {
+  
+  }
+
+  h4 {
+
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 150px;
+    font-size: 4rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    li {
+
+    }
+  }
 }
 
