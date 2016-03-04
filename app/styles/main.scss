@@ -12,11 +12,21 @@ body {
   margin: 0
 }
 
+h4.title {
+  display: none;
+}
+
+.content {
+  height: 60px;
+  width: 100%;
+  background: yellow; 
+}
+
 .wrapper {
-  max-width: 800px;
-  // height: 100%;
-  margin: 0 auto;
-  padding: 0;
+  // max-width: 800px;
+  height: 100%;
+  // margin: 0 auto;
+  // padding: 0;
   background-color: blue;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -31,9 +41,9 @@ body {
 }
 
 .about {
-  margin: 100px;
+  // margin: 100px;
   padding: 100px;
-  height: 500px;
+  // height: 500px;
   background: tomato;
   text-align: center;
   display: -ms-flexbox;
@@ -54,7 +64,7 @@ body {
   ul {
     margin: 0 auto;
     padding: 0;
-    width: 150px;
+    width: 250px;
     font-size: 4rem;
     list-style: none;
     display: flex;
