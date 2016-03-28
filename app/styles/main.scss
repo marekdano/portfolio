@@ -12,22 +12,19 @@ body {
   margin: 0
 }
 
-h4.title {
-  display: none;
+p {
+  font-size: 18px;
 }
 
 .content {
   height: 60px;
   width: 100%;
-  background: yellow; 
+  //background: yellow; 
 }
 
 .wrapper {
-  // max-width: 800px;
   height: 100%;
-  // margin: 0 auto;
-  // padding: 0;
-  background-color: blue;
+  //background-color: blue;
   display: -ms-flexbox;
   display: -webkit-flex;
   display:         flex;
@@ -41,10 +38,8 @@ h4.title {
 }
 
 .about {
-  // margin: 100px;
   padding: 100px;
-  // height: 500px;
-  background: tomato;
+  //background: tomato;
   text-align: center;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -52,14 +47,6 @@ h4.title {
 
   flex-direction: column;
   justify-content: space-around;
-
-  h1 {
-  
-  }
-
-  h4 {
-
-  }
 
   ul {
     margin: 0 auto;
@@ -70,10 +57,18 @@ h4.title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-    li {
-
-    }
   }
+}
+
+.img-profile {
+  max-width: 150px;
+}
+
+p.title {
+  display: none;
+}
+
+span.typed-sentences {
+  font-size: 18px;
 }
 

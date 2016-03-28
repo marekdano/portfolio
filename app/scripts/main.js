@@ -1,18 +1,18 @@
-console.log('\'Allo \'Allo!');
 
 $(() => {
-  $(".element").typed({
-    strings: ["Web developer ^1000 at the night", "Tester at the day"], 
+  // $(".element").typed({
+  //   strings: ["Web developer ^1000 at the night", "Tester at the day"], 
     
-  });
+  // });
 
   $(".typed-sentences").typed({
     stringsElement: $('.typed-strings'),
-    showCursor: false,
+    showCursor: true,
     typeSpeed: 100,
     callback: function(){
       $('.typed-sentences').hide();
-      $('h4').fadeIn('slow');
+      $('.typed-cursor').hide();
+      $('p.title').fadeIn(1500);
     }
   });
 });
