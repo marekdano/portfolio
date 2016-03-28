@@ -1,11 +1,8 @@
+/*globals $:false */
+'use strict';
 
-$(() => {
-  // $(".element").typed({
-  //   strings: ["Web developer ^1000 at the night", "Tester at the day"], 
-    
-  // });
-
-  $(".typed-sentences").typed({
+$(function() {
+  $('.typed-sentences').typed({
     stringsElement: $('.typed-strings'),
     showCursor: true,
     typeSpeed: 100,
