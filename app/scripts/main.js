@@ -2,12 +2,12 @@
 'use strict';
 
 $(function() {
-  $('.typed-sentences').typed({
-    stringsElement: $('.typed-strings'),
+  $('#typed-sentences').typed({
+    strings: ["Web developer at the night.", "Tester at the day."],
     showCursor: true,
     typeSpeed: 100,
     callback: function(){
-      $('.typed-sentences').hide();
+      $('#typed-sentences').hide();
       $('.typed-cursor').hide();
       $('p.title').fadeIn(1500);
     }

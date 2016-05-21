@@ -48,7 +48,6 @@ p {
 }
 
 .about {
-  padding: 100px;
   //background: tomato;
   text-align: center;
   display: -ms-flexbox;
@@ -78,7 +77,7 @@ p.title {
   display: none;
 }
 
-span.typed-sentences {
+span#typed-sentences {
   @extend p;
 }
 
