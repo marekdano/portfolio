@@ -84,40 +84,54 @@ p {
   position: absolute;
   top: 100%;
   width: 100%;
-  background-color: silver;
+  background-color: #eee;
 
   .inner {
-    background: red;
+    //background: red;
     margin-top: 20px;
     max-width: 900px;
     margin: 0 auto;
     
     .feature {
-      background-color: grey;
+      background-color: #f1f1f1;
       margin: 4em 0; 
+      padding-left: 24px;
+      padding-right: 24px;
       border: 1px solid black;
-      display: -webkit-flex;
-      display:     -ms-flex;
-      display:         flex;
+      // display: -webkit-flex;
+      // display:     -ms-flex;
+      // display:         flex;
+      
+      .image-wrapper {
+        margin: 10px auto;
+        padding: 5px;
+        border: 1px solid black;
+
+        @media screen and (min-width: 768px) {
+          &.pull-right-img {
+            float: right;
+          }
+        }
+      }
 
       .content {
-        width: 100%;
+        //width: 100%;
         padding: 3em;
       }
       
-      &.left {
-        flex-direction: row;
-      }
+      // &.left {
+      //   flex-direction: row;
+      // }
 
-      &.right {
-        flex-direction: row-reverse;
-      }
+      // &.right {
+      //   flex-direction: row-reverse;
+      // }
 
-      @media screen and (max-width: 900px) {
-        &.left, &.right {
-          flex-direction: column;
-        }
-      }
+      // @media screen and (max-width: 900px) {
+      //   &.left, &.right {
+      //     flex-direction: column;
+      //   }
+      // }
     }
   }
 }
