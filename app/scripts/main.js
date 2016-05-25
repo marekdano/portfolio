@@ -9,7 +9,7 @@ $(function() {
     callback: function(){
       $('#typed-sentences').hide();
       $('.typed-cursor').hide();
-      $('p.title').fadeIn(1500);
+      $('h4.title').fadeIn(1500);
     }
   });
 });
