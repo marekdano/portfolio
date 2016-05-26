@@ -33,7 +33,7 @@ h2 {
 p {
   font-size: 1.2em;
   font-family: 'PT Sans', sans-serif;
-  margin: 0 0 2em 0;
+  margin: 0 0 1.2em 0;
 }
 
 #wrapper {
@@ -115,24 +115,28 @@ p {
     //background: red;
     margin-top: 20px;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 0 auto 5em;
     
     .feature {
       background-color: $secondary_color;
       margin: 4em 0; 
-      padding-left: 24px;
-      padding-right: 24px;
+      padding: 1em 2.2em;
       //border: 1px solid black;
       // display: -webkit-flex;
       // display:     -ms-flex;
       // display:         flex;
+
+      @media screen and (max-width: 769px) {
+        margin: 5em 3em 3em 3em;
+      }
       
       .image-wrapper {
         margin: 10px auto;
-        padding: 5px;
-        border: 1px solid $primary_color;
+        padding: 0px;
+        border: 12px solid lighten($primary_color, 52%);
         border-radius: 5px;
 
+    
         @media screen and (min-width: 768px) {
           &.pull-right-img {
             float: right;
@@ -152,6 +156,25 @@ p {
   }
 }
 
+.dev-icons {
+  margin-bottom: 1em;
+
+  .devicon {
+    margin-right: .4em;
+    max-width: 2em;
+  }
+  
+  i {
+    font-size: 2em;
+  }
+}
+
+.actions {
+  a {
+    margin: 10px 8px 0 0;
+  }  
+}
+
 .img-profile {
   max-width: 150px;
 }
@@ -159,8 +182,4 @@ p {
 h4.title {
   display: none;
 }
-
-// span#typed-sentences {
-//   @extend p;
-// }
 
