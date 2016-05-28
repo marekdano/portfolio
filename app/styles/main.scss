@@ -133,7 +133,7 @@ p {
       .image-wrapper {
         margin: 10px auto;
         padding: 0px;
-        border: 12px solid lighten($primary_color, 52%);
+        //border: 12px solid lighten($primary_color, 52%);
         border-radius: 5px;
 
     
@@ -156,16 +156,71 @@ p {
   }
 }
 
+.browser {
+  border: 1px solid rgba($primary_color, .15);
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 5px 5px 0 5px rgba($primary_color, .03);
+  //transform: translate(-50%);
+}
+
+.browser-toolbar {
+  position: relative;
+  border-bottom: 1px solid rgba($primary_color, .15);
+  padding: 8px;
+  background: darken($secondary_color, 10);
+}
+
+.browser-icons {
+  position: relative;
+
+  &, 
+  &:before,
+  &:after  {
+    width: 10px;
+    height: 10px;
+    border-radius: 10em;
+    display: block;
+  }
+
+  & {
+    background: tomato;
+  }
+
+  &:before,
+  &:after  {
+    content: '';
+    position: absolute;
+    top: 0;
+  }
+
+  &:after {
+    background: lightgreen;
+    left: 30px;
+  }
+
+  &:before {
+    background: gold;
+    left: 15px;
+  }
+}
+
+
 .dev-icons {
   margin-bottom: 1em;
 
   .devicon {
-    margin-right: .4em;
+    //margin-right: 0;
     max-width: 2em;
   }
   
   i {
     font-size: 2em;
+    margin-right: .1em;
+  }
+
+  svg {
+    margin-right: .6em;
   }
 }
 
