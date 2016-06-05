@@ -46,15 +46,10 @@ p {
   -webkit-justify-content: center;
       -ms-justify-content: center;
           justify-content: center;
- 
-  // -webkit-align-items: center;
-  //     -ms-align-items: center;
-  //    -moz-align-items: center;
   //         align-items: center;
 }
 
 #intro {
-  //background: tomato;
   text-align: center;
 
   & .picture {
@@ -73,7 +68,6 @@ p {
   & .intro-content {
     height: 60px;
     width: 100%;
-    //background: yellow; 
   }
 
   ul {
@@ -105,6 +99,10 @@ p {
     font-size: 2.2em;
     padding: 0.1em 1em;
   }
+
+  @media screen and (max-height: 450px) {
+    display: none;
+  }
 }
 
 #portfolio {
@@ -133,7 +131,6 @@ p {
   .image-wrapper {
     margin: 10px auto;
     padding: 0;
-    //border: 12px solid lighten($primary_color, 52%);
     border-radius: 5px;
 
 
