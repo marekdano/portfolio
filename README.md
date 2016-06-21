@@ -1,2 +1,2 @@
 # portfolio
-My portfolio can be seen on this ${url}
+My portfolio can be seen here www.marekdano.com
