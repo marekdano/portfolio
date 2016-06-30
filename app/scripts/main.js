@@ -3,7 +3,7 @@
 
 $(function() {
   $('#typed-sentences').typed({
-    strings: ["Web developer at the night.", "Tester at the day."],
+    strings: ["Web developer by night.", "Tester by day."],
     showCursor: true,
     typeSpeed: 100,
     callback: function(){
