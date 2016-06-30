@@ -1,1 +1,1 @@
-"use strict";$(function(){$("#typed-sentences").typed({strings:["Web developer at the night.","Tester at the day."],showCursor:!0,typeSpeed:100,callback:function(){$("#typed-sentences").hide(),$(".typed-cursor").hide(),$("h4.title").fadeIn(1500)}})});
+"use strict";$(function(){$("#typed-sentences").typed({strings:["Web developer by night.","Tester by day."],showCursor:!0,typeSpeed:100,callback:function(){$("#typed-sentences").hide(),$(".typed-cursor").hide(),$("h4.title").fadeIn(1500)}})});
