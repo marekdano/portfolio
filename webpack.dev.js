@@ -5,11 +5,11 @@ module.exports = {
 
   // This option controls if and how source maps are generated.
   // https://webpack.js.org/configuration/devtool/
-  devtool: 'cheap-module-eval-source-map' ,
+  devtool: 'cheap-module-eval-source-map',
 
   // https://webpack.js.org/concepts/entry-points/#multi-page-application
   entry: {
-    index: './src/page-index/main.js',
+    index: './src/page-index/page-index.js',
   },
 
   // https://webpack.js.org/configuration/dev-server/
@@ -29,6 +29,13 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          "css-loader",
+        ],
+      },
+      {
         test: /\.scss$/,
         use: [
           "style-loader",
@@ -38,7 +45,7 @@ module.exports = {
       },
       {
         // Load all images as base64 encoding if they are smaller than 8192 bytes
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(png|jpe?g|gif|svg)$/,
         use: [
           {
             loader: 'url-loader',
@@ -47,7 +54,8 @@ module.exports = {
               name: '[path][name].[ext]?hash=[hash:20]',
               limit: 8192
             }
-          }
+          },
+          'image-webpack-loader'
         ]
       }
     ],
@@ -57,7 +65,7 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('style.css'),
     new HtmlWebpackPlugin({
-      template: './src/page-index/index.html',
+      template: './src/page-index/page-index.html',
       inject: true,
       chunks: ['index'],
       filename: 'index.html'
