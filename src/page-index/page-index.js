@@ -1,5 +1,5 @@
 import 'normalize.css/normalize.css';
-import '../main.scss';
+import './page-index.scss';
 import Typed from 'typed.js';
 import { library, dom } from "@fortawesome/fontawesome-svg-core";
 import { faAngleDown } from "@fortawesome/free-solid-svg-icons/faAngleDown";
