@@ -86,34 +86,49 @@
   background-color: darken($secondary_color, 2.8);
   margin: 4em 0;
   padding: 1em 2.2em;
+  display: flex;
+  flex-direction: row;
 
   @media screen and (max-width: 768px) {
     & {
       margin-top: 1em;
+      flex-direction: column;
     }
   }
 
   .image-wrapper {
-    margin: 2.4rem;
+    margin: 1rem 0;
     padding: 0;
     border-radius: 5px;
+    width: 50%;
 
+    @media screen and (max-width: 768px) {
+      margin: .8rem auto 0 auto;
+      width: 100%;
+    }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       padding: 1em;
+    }
+  }
 
-      &.pull-right-img {
-        float: right;
-      }
+  .image-wrapper__right {
+    order: 2;
+
+    @media screen and (max-width: 768px) {
+      order: 1;
     }
   }
 
   .portfolio-content {
     padding: 3em;
+    width: 50%;
 
-    @media screen and (max-width: 769px) {
-      clear: right;
-      padding: 2em;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      padding: 2rem 0;
+      width: 100%;
+      order: 2;
     }
 
     p:last-of-type {
