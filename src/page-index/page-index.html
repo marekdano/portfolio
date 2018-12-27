@@ -1,76 +1,58 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html>
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marek Dano - portfolio</title>
 
-    <!-- <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
-    <!-- Place favicon.ico in the root directory -->
     <!-- <link rel="shortcut icon" type="image/png" href="favicon.ico"/> -->
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    
-    <!-- build:css styles/vendor.css -->
-    <!-- bower:css -->
-    <link rel="stylesheet" type="text/css" href="/bower_components/hover/css/hover-min.css">
-    <!-- endbower -->
-    <!-- endbuild -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
-    
-    <!-- build:js scripts/vendor/modernizr.js -->
-    <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
+    <link type="text/css" rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans|PT+Sans" rel="stylesheet">
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <div id="wrapper">
+
+    <main id="wrapper">
       <section id="intro">
         <div class="picture">
-          <img class="img-circle img-profile" src="images/profile-image.jpg" alt="profile image">
+          <img class="img-circle img-profile" src="assets/images/profile-image.jpg" alt="profile image">
         </div>
         <h3>Marek Dano</h3>
         <div class="intro-content">
-          <h4 class="title">Web developer / Tester </h4>
+          <h4 class="title">Software developer</h4>
           <span id="typed-sentences"></span>
         </div>
 
         <ul class="social">
-          <li><a href="https://www.github.com/marekdano" target="_blank"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.twitter.com/marekdano" target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/marekdano" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="http://codepen.io/marekdano" target="_blank"><i class="fa fa-codepen"></i></a></li>
+          <li><a href="https://www.github.com/marekdano" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.twitter.com/marekdano" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/marekdano" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="http://codepen.io/marekdano" target="_blank"><i class="fab fa-codepen"></i></a></li>
         </ul>
-      </section><!-- /#intro -->
+      </section>
 
       <section id="arrow-link" class="hvr-wobble-vertical">
-        <h5>Portfolio</h5>
-        <a href="#portfolio"><i class="fa fa-angle-down"></i></a>
+        <h6 class="title__link">Portfolio</h6>
+        <a href="#portfolio"><i class="fas fa-angle-down"></i></a>
       </section>
-      
+
       <section id="portfolio">
         <div class="inner">
-
           <article class="feature right">
-           <div class="row">
-            <div class="image-wrapper col-md-6 pull-right-img">
+            <div class="image-wrapper image-wrapper__right ">
               <div class="browser">
                 <div class="browser-toolbar">
                   <i class="browser-icons"></i>
                 </div>
                 <div class="browser-viewport">
-                  <img class="img-responsive" src="images/carosabikes_intro_screenshot.png" alt="">
+                  <img class="img-responsive" src="assets/images/carosabikes_intro_screenshot.png" alt="">
                 </div>
-              </div>              
+              </div>
             </div>
-            <div class="portfolio-content col-md-6">
+            <div class="portfolio-content">
               <h2>Carosabikes</h2>
               <p>Carosabikes is a fully functional online shop. It has been created as a main project during my learning of Ruby and Rails framework on <a href="http://careerfoundry.com" target="_blank">CareerFoundry</a>.</p>
 
@@ -97,26 +79,24 @@
                 <i class="devicon devicon-heroku-original-wordmark colored"></i>
               </div>
               <div class="actions">
-                <a href="http://carosabikes.herokuapp.com" target="_blank" class="btn btn-default">Website</a>
-                <a href="http://github.com/marekdano/firstApp" target="_blank" class="btn btn-default">Code</a>
+                <a href="http://carosabikes.herokuapp.com" target="_blank" class="btn btn__default">Website</a>
+                <a href="http://github.com/marekdano/firstApp" target="_blank" class="btn btn__default">Code</a>
               </div>
             </div>
-           </div>
           </article>
 
           <article class="feature left">
-           <div class="row">
-            <div class="image-wrapper col-md-6">
+            <div class="image-wrapper">
               <div class="browser">
                 <div class="browser-toolbar">
                   <i class="browser-icons"></i>
                 </div>
                 <div class="browser-viewport">
-                  <img class="img-responsive" src="images/railsblog_screenshot.png" alt="">
+                  <img class="img-responsive" src="assets/images/railsblog_screenshot.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="portfolio-content col-md-6">
+            <div class="portfolio-content">
               <h2>RailsBlog</h2>
               <p>Railsblog is a blogging application written in Ruby on Rails where an article can be created, edited or deleted. All articles are dynamically displayed for reading.</p>
 
@@ -131,26 +111,24 @@
                 <i class="devicon devicon-heroku-original-wordmark colored"></i>
               </div>
               <div class="actions">
-                <a href="http://railsblog.marekdano.com" class="btn btn-default" target="_blank">Website</a>
-                <a href="http://github.com/marekdano/rails-blog" class="btn btn-default" target="_blank">Code</a>
+                <a href="http://railsblog.marekdano.com" class="btn btn__default" target="_blank">Website</a>
+                <a href="http://github.com/marekdano/rails-blog" class="btn btn__default" target="_blank">Code</a>
               </div>
             </div>
-           </div>
           </article>
 
           <article class="feature right">
-           <div class="row">
-            <div class="image-wrapper col-md-6 pull-right-img">
+            <div class="image-wrapper image-wrapper__right ">
               <div class="browser">
                 <div class="browser-toolbar">
                   <i class="browser-icons"></i>
                 </div>
                 <div class="browser-viewport">
-                  <img class="img-responsive" src="images/fullbasket_screenshot.png" alt="">
+                  <img class="img-responsive" src="assets/images/fullbasket_screenshot.png" alt="">
                 </div>
-              </div>              
+              </div>
             </div>
-            <div class="portfolio-content col-md-6">
+            <div class="portfolio-content">
               <h2>Full basket</h2>
               <p>Full basket is a application for adding / removing any item to / from a virtual basket. The application can be used as a core implementation for any complex applications (e.g. online cart, shopping list...).</p>
 
@@ -165,31 +143,29 @@
                 <i class="devicon devicon-heroku-original-wordmark colored"></i>
               </div>
               <div class="actions">
-                <a href="http://fullbasket.marekdano.com" class="btn btn-default" target="_blank">Website</a>
-                <a href="http://github.com/marekdano/full-basket" class="btn btn-default" target="_blank">Code</a>
+                <a href="http://fullbasket.marekdano.com" class="btn btn__default" target="_blank">Website</a>
+                <a href="http://github.com/marekdano/full-basket" class="btn btn__default" target="_blank">Code</a>
               </div>
             </div>
-           </div>
           </article>
 
           <article class="feature left">
-           <div class="row">
-            <div class="image-wrapper col-md-6">
+            <div class="image-wrapper">
               <div class="browser">
                 <div class="browser-toolbar">
                   <i class="browser-icons"></i>
                 </div>
                 <div class="browser-viewport">
-                  <img class="img-responsive" src="images/cicero_innovate_screenshot.png" alt="">
+                  <img class="img-responsive" src="assets/images/cicero_networks_screenshot.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="portfolio-content col-md-6">
-              <h2>Cicero Innovate</h2>
-              <p>CiceroInnovate is a website for a consulting company to showcase their company profile.</p>
+            <div class="portfolio-content">
+              <h2>Company landing page</h2>
+              <p>Cicero Networks is a website for a consulting company to showcase their company profile.</p>
 
               <p>The website is a basic static web page written in:</p>
-              
+
               <div class="dev-icons">
                 <i class="devicon devicon-bootstrap-plain-wordmark colored"></i>
                 <svg class="devicon" viewBox="0 0 128 128">
@@ -200,27 +176,25 @@
                 </svg>
               </div>
               <div class="actions">
-                <a href="http://www.ciceroinnovate.com" class="btn btn-default" target="_blank">Website</a>
+                <a href="http://www.ciceronetworks.com" class="btn btn__default" target="_blank">Website</a>
               </div>
             </div>
-           </div>
           </article>
 
           <article class="feature right">
-           <div class="row">
-            <div class="image-wrapper col-md-6 pull-right-img">
+            <div class="image-wrapper image-wrapper__right ">
               <div class="browser">
                 <div class="browser-toolbar">
                   <i class="browser-icons"></i>
                 </div>
                 <div class="browser-viewport">
-                  <img class="img-responsive" src="images/tic_tac_toe_screenshot.png" alt="">
+                  <img class="img-responsive" src="assets/images/tic_tac_toe_screenshot.png" alt="">
                 </div>
               </div>
             </div>
-            <div class="portfolio-content col-md-6">
+            <div class="portfolio-content">
               <h2>Tic Tac Toe</h2>
-              <p>Tictactoe is a browser game which can be played between a computer and a player or between two players. 
+              <p>Tictactoe is a browser game which can be played between a computer and a player or between two players.
 
               <p>The game was created as motivation for applying to <a href="http://recurse.com" target="_blank">Recurse Center</a> using just pure javascript, html and css.</p>
               <div class="dev-icons">
@@ -235,18 +209,16 @@
                 </svg>
               </div>
               <div class="actions">
-                <a href="http://tictactoe.marekdano.com" class="btn btn-default" target="_blank">Website</a>
-                <a href="http://github.com/marekdano/tictactoe" class="btn btn-default" target="_blank">Code</a>
+                <a href="http://tictactoe.marekdano.com" class="btn btn__default" target="_blank">Website</a>
+                <a href="http://github.com/marekdano/tictactoe" class="btn btn__default" target="_blank">Code</a>
               </div>
             </div>
-           </div>
           </article>
 
-        </div><!-- /.inner -->
-      </section><!-- /#portfolio -->
-    </div><!-- /#wrapper -->
+        </div>
+      </section>
+    </main>
 
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -255,16 +227,5 @@
       ga('create', 'UA-34192408-1', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <!-- build:js scripts/vendor.js -->
-    <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="/bower_components/typed.js/dist/typed.min.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-        
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
   </body>
 </html>

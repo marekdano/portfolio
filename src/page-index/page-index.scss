@@ -1,40 +1,5 @@
-//$icon-font-path: '../fonts/';
-
-// bower:scss
-@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans);
-// endbower
-
-$primary_color: #555; //color for text, border
-$secondary_color: #ffffff;
-
-
-html, body {
-  height: 100%;
-}
-
-body {
-  //font-family: 'Fira Sans', sans-serif;
-  font-family: 'Alegreya Sans', sans-serif;
-  margin: 0;
-  color: $primary_color;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-  margin: 0 0 1em 0;
-}
-
-h2 {
-  font-size: 2.1em;
-}
-
-p {
-  font-size: 1.1em;
-  font-family: 'PT Sans', sans-serif;
-  margin: 0 0 1.2em 0;
-}
+@import '../variables';
+@import '../main.scss';
 
 #wrapper {
   height: 100%;
@@ -55,7 +20,7 @@ p {
   & .picture {
     margin: 0 0 2em 0;
   }
-  
+
   & h3 {
     margin-bottom: .6em;
   }
@@ -74,7 +39,7 @@ p {
     margin: 0 auto;
     padding: 0;
     width: 250px;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     list-style: none;
     display: -webkit-flex;
     display:     -ms-flex;
@@ -119,36 +84,51 @@ p {
 
 .feature {
   background-color: darken($secondary_color, 2.8);
-  margin: 4em 0; 
+  margin: 4em 0;
   padding: 1em 2.2em;
+  display: flex;
+  flex-direction: row;
 
   @media screen and (max-width: 768px) {
     & {
       margin-top: 1em;
+      flex-direction: column;
     }
   }
-  
+
   .image-wrapper {
-    margin: 10px auto;
+    margin: 1rem 0;
     padding: 0;
     border-radius: 5px;
+    width: 50%;
 
+    @media screen and (max-width: 768px) {
+      margin: .8rem auto 0 auto;
+      width: 100%;
+    }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 769px) {
       padding: 1em;
+    }
+  }
 
-      &.pull-right-img {
-        float: right;
-      }
+  .image-wrapper__right {
+    order: 2;
+
+    @media screen and (max-width: 768px) {
+      order: 1;
     }
   }
 
   .portfolio-content {
     padding: 3em;
+    width: 50%;
 
-    @media screen and (max-width: 769px) {
-      clear: right;
-      padding: 2em;
+    @media screen and (max-width: 768px) {
+      margin: 0 auto;
+      padding: 2rem 0;
+      width: 100%;
+      order: 2;
     }
 
     p:last-of-type {
@@ -175,7 +155,7 @@ p {
 .browser-icons {
   position: relative;
 
-  &, 
+  &,
   &:before,
   &:after  {
     width: 10px;
@@ -214,7 +194,7 @@ p {
     //margin-right: 0;
     max-width: 2em;
   }
-  
+
   i {
     font-size: 2em;
     margin-right: .1em;
@@ -230,14 +210,28 @@ p {
 .actions {
   a {
     margin: 10px 8px 0 0;
-  }  
+  }
 }
 
 .img-profile {
+  margin: 0 auto;
   max-width: 150px;
 }
 
-h4.title {
+.title {
   display: none;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+
+.title__link {
+  margin-bottom: 0;
+}
