@@ -5,9 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
-const CopyWebpackPlugin = require('copy-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const buildPath = path.resolve(__dirname, 'docs');
+const prodFolder = 'docs';
+const buildPath = path.resolve(__dirname, prodFolder);
 
 module.exports = {
   // This option controls if and how source maps are generated.
@@ -88,7 +89,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([ {
       from: path.resolve(__dirname, 'assets/images/'),
-      to: path.resolve(__dirname, 'dist/assets/images/')
+      to: path.resolve(__dirname, `${prodFolder}/assets/images/`)
   } ], { debug: 'info' })
   ],
 
