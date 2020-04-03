@@ -4,3 +4,6 @@ dist
 .sass-cache
 npm-debug.log
 .DS_Store
+
+package-lock.json
+yarn.lock
