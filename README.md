@@ -1,2 +1,2 @@
 # portfolio
-My portfolio can be seen here www.marekdano.com
+My old portfolio can still be seen at marekdano.github.io/portfolio/
